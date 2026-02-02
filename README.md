@@ -218,17 +218,6 @@ if config_env() in [:dev, :test] do
 end
 ```
 
-## Comparison with Spring Boot
-
-| Feature | Spring Boot | Devcontainers |
-|---------|-------------|---------------|
-| Auto-discovery | ✅ | ✅ |
-| Auto-start | ✅ | ✅ |
-| Service connections | ✅ Bean-based | ✅ Environment variables |
-| Auto-stop | ✅ | ✅ |
-| Custom handlers | Via `DockerComposeConnectionDetailsFactory` | Via `Service` behaviour |
-| Ignore labels | `org.springframework.boot.ignore` | Both `devcontainers.ignore` and Spring's label |
-
 ## Requirements
 
 - Docker with Docker Compose (v2 preferred, v1 supported)

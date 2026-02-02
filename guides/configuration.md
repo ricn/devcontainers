@@ -202,19 +202,6 @@ services:
       devcontainers.ignore: "true"
 ```
 
-### Spring Boot Compatibility
-
-For compose files shared with Spring Boot projects:
-
-```yaml
-services:
-  monitoring:
-    image: grafana/grafana
-    labels:
-      # Works with both Spring Boot and Devcontainers
-      org.springframework.boot.ignore: "true"
-```
-
 ## Complete Example
 
 ```elixir

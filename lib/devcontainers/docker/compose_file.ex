@@ -41,8 +41,7 @@ defmodule Devcontainers.Docker.ComposeFile do
   defstruct version: nil, services: %{}, raw: %{}
 
   @ignore_labels [
-    "devcontainers.ignore",
-    "org.springframework.boot.ignore"
+    "devcontainers.ignore"
   ]
 
   @doc """

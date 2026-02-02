@@ -44,4 +44,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `DEVCONTAINERS_COMPOSE_FILE`
 - Support for ignore labels:
   - `devcontainers.ignore`
-  - `org.springframework.boot.ignore` (Spring Boot compatibility)

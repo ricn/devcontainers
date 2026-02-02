@@ -299,24 +299,6 @@ defmodule Devcontainers.Docker.ComposeFileTest do
       assert length(active) == 1
       assert hd(active).name == "db"
     end
-
-    test "respects Spring Boot ignore label" do
-      yaml = """
-      services:
-        db:
-          image: postgres:15
-        monitoring:
-          image: grafana/grafana
-          labels:
-            org.springframework.boot.ignore: "true"
-      """
-
-      {:ok, compose} = ComposeFile.parse_string(yaml)
-      active = ComposeFile.active_services(compose)
-
-      assert length(active) == 1
-      assert hd(active).name == "db"
-    end
   end
 
   describe "get_service/2" do
